@@ -72,8 +72,10 @@ not have to wait three real weeks. Absolute error = |prediction − actual next-
 Extra unit tests: the partial starting week is excluded; two check-ins on one date count once;
 weeks are counted correctly across the Nov 1 daylight-saving change; results are clamped at 7.
 
-> **Fill in before submitting:** paste the actual `flutter test test/garden_guide_test.dart`
-> output (or a screenshot) here, with the date you ran it.
+**Run result (Oct 31, 2026, macOS):** `flutter test` → `00:06 +50: All tests passed!` (all 50 tests in the
+project, including every Garden Guide case above). The H1 card was also checked by hand on the Android
+emulator with the fictional sample habit: it showed "Suggested weekly target: 3 (yours is 5)" with the
+explanation "Average of your last 3 full weeks (2, 3, 4) = 3.0, rounded to 3".
 
 ### What the evaluation does and does not show
 
