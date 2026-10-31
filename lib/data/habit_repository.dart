@@ -299,7 +299,7 @@ class HabitRepository {
       where: ignoreId == null
           ? 'habitId = ? AND localDate = ?'
           : 'habitId = ? AND localDate = ? AND id != ?',
-      whereArgs: [habitId, toDateKey(date), if (ignoreId != null) ignoreId],
+      whereArgs: [habitId, toDateKey(date), ?ignoreId],
     );
     if (rows.isNotEmpty) throw DuplicateCheckInException(date);
   }
